@@ -9,7 +9,7 @@ function XGames() {
         <div className="text">
           What's work with no play? 
         </div>
-        <div className="text" style={{marginTop: "20px"}}>
+        <div className="text" style={{marginTop: "20px", padding : "20px"}}>
           This here is the leaderboard to our XR gaming event.
         </div>     
       </div>

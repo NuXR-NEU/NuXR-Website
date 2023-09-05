@@ -1,38 +1,54 @@
 import React from "react";
-import Logo from '../assets/images/nuxr.png';
+import { Link } from "react-router-dom";
+import Logo from "../assets/images/nuxr.png";
 
+function Nav() {
+  const expand = () => {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  };
 
-function Nav(){
-    return (
-        <nav className="nav-wrapper">
-            <div className="nav-content">
-                <ul className="list-styled">
-                    <li>
-                    <a className="link-styled" href="/" style={{ textDecoration: 'none' }}>
-                        <img className="link-styled" style={{ height : '30px', margin : '9px'}} src={Logo} alt="Apple"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a className="link-styled" href="/projects" style={{ textDecoration: 'none' }}>Projects</a>
-                    </li>
-                    <li>
-                        <a className="link-styled" href="/events" style={{ textDecoration: 'none' }}>Events</a>
-                    </li>
-                    <li>
-                        <a className="link-styled" href="/showcase" style={{ textDecoration: 'none' }}>Showcase</a>
-                    </li>
-                    <li>
-                        <a className="link-styled" href="/xgames" style={{ textDecoration: 'none' }}>X-Games</a>
-                    </li>
-                    <li>
-                     <a className="link-styled" href="/socials" style={{ textDecoration: 'none' }}>Join Us!</a> 
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
-
-    );
+  return (
+    <div className="topnav" id="myTopnav">
+      <div>
+        <a href="/" style={{ textDecoration: "none" }}>
+          <img
+            style={{ height: "30px", padding: "5px" }}
+            src={Logo}
+            alt="Apple"
+          />
+        </a>
+      </div>
+      <div className="nav-right">
+        <a className="page" href="/projects">
+          Projects
+        </a>
+        <a className="page" href="/events">
+          Events
+        </a>
+        <a className="page" href="/showcase">
+          Showcase
+        </a>
+        <a className="page" href="/xgames">
+          X-Games
+        </a>
+        <a className="page" href="/socials">
+          Join Us!
+        </a>
+        <a
+          style={{ fontSize: "15px" }}
+          className="icon"
+          onClick={expand}
+        >
+          &#9776;
+        </a>
+      </div>
+    </div>
+  );
 }
 
 export default Nav;

@@ -42,20 +42,16 @@ function DisplaySection() {
           maxHeight: "80%",
         }}
       ></img>
-      <img src={Head} style={{ position: "absolute", bottom: 0 }}></img>
+      <img className="head-img" src={Head} style={{ position: "absolute", bottom: 0 }}></img>
       {isBottom && (
         <div>
           <img
+            className="dragon-img"
             src={Dragon}
-            style={{
-              width: "250px",
-              position: "absolute",
-              right: "10%",
-              top: "10%",
-            }}
           ></img>
           <img
             src={HedgeHog}
+            className="head-img"
             style={{
               width: "100px",
               position: "absolute",
@@ -65,6 +61,7 @@ function DisplaySection() {
           ></img>
            <img
             src={Unicorn}
+            className="head-img"
             style={{
               width: "175px",
               position: "absolute",
@@ -79,7 +76,7 @@ function DisplaySection() {
             }} ></iframe> */}
         </div>
       )}
-      <p className="text">Join Us</p>
+      <a className="text" href="/socials">Join Us</a>
       <span className="description">
       Together, we'll explore, create, and shape the future of Extended Reality.
       </span>

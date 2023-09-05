@@ -11,7 +11,7 @@ function Socials() {
               <div className="title">  
                   Join Us!
               </div>
-              <div className='join-text' style={{marginTop: "20px" }}> Whether you're a student, professional, professor, hobbyist, or simply intrigued by the world of XR, we invite you to join. </div>
+              <div className='join-text' style={{marginTop: "20px", marginLeft : "20px",  marginRight : "20px"}}> Whether you're a student, professional, professor, hobbyist, or simply intrigued by the world of XR, we invite you to join. </div>
               <hr style={{width: "60%", marginTop: "30px", marginLeft: "20%"}}/>
               <div className='join-why-container'>
               <div className='join-title'>
